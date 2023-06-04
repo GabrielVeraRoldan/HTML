@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de nómina</title>
+</head>
+<body>
+    <script>
+                let nombre="Nombre";
+        nombre= prompt ("Digite Nombre completo")
+    function calcularsalario(){
+        let horas=parseFloat(prompt("Ingrese cantidad de horas trabajadas"));
+        num1= 8334;
+        let horasnocturnas=parseFloat(prompt("Ingrese cantidad de horas nocturas trabajadas"));
+        num2=2917;
+        let horasdominicales=parseFloat(prompt("Ingrese cantidad de horas dominicales trabajadas"));
+        num3=14584;
+        let resultado = horas * num1
+        let resultado2 = horasnocturnas * num2
+        let resultado3=horasdominicales * num3
+        let nomina= resultado + resultado2 + resultado3
+
+        alert("Sr(a) " + nombre + " su salario es: " + nomina + "$")
+    }
+    calcularsalario();
+    </script>
+</body>
+</html>
